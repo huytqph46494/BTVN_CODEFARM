@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: yellow;
+        }
+
+        /* tất cả pseudo-element đều là inline */
+        p::before{
+            content: "noi dung before";
+            background-color: orange;
+            padding: 10px;margin: 10px;
+        }
+        p::after{
+            content: "noi dung after";
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p>nội dung thẻ p</p>
+</body>
+</html>

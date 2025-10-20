@@ -1,0 +1,50 @@
+/* h1{
+    color: red;
+} */
+*{
+    /* universal selector */
+    color: blue;
+}
+
+:root{
+--primary-color: rgba(0, 0, 154, 0.855);
+--secondary-color: rgba(43, 0, 255, 0.963);
+
+}
+
+h1{
+    color: var(--primary-color);
+}
+
+button{
+    background-color: var(--secondary-color);
+}
+
+html{
+    /* đặt những thuộc tính dùng chung và kế thừa vào đây */
+    font-size: 28px;
+    font-family: Arial, serif;
+}
+/* div#myDiv-1 >p{
+    background-color: red;
+} */
+
+p + p{
+    background-color: yellow;
+}
+
+p ~ul{
+    background-color: lightblue;
+}
+
+label, input{
+    display: block;
+}
+
+a[target]{
+    color: red;
+}
+
+a[href^="https"]{
+    color: green;
+}
