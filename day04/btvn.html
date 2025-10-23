@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation UI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f4f7ff, #eef5fa);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+    nav {
+      background: #fff;
+      padding: 15px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: #e8efff;
+      color: #2b59ff;
+    }
+
+    
+    .dropdown {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      display: none;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
+      width: 300px;
+      display: flex;
+      gap: 40px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+
+    li:hover .dropdown {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .dropdown h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .dropdown ul {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .dropdown ul li a {
+      font-size: 14px;
+      color: #222;
+      border-radius: 5px;
+      padding: 4px 8px;
+    }
+
+    .dropdown ul li a:hover {
+      background: #f0f4ff;
+      color: #2b59ff;
+    }
+
+    
+    .auth {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .auth a {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .btn-signup {
+      background: #0d0c20;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn-signup:hover {
+      background: #2b59ff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Framework</a></li>
+      <li><a href="#">Demos</a></li>
+
+      <li>
+        <a href="#">Resources</a>
+        <div class="dropdown">
+          <div>
+            <h4>TOP CONTROLS</h4>
+            <ul>
+              <li><a href="#">Grid</a></li>
+              <li><a href="#">Chart</a></li>
+              <li><a href="#">Controls</a></li>
+              <li><a href="#">Financial Chart</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>TOP CONTROLS</h4>
+            <ul>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Licensing</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="#">Documentation</a></li>
+    </ul>
+
+    <div class="auth">
+      <a href="#">Log in</a>
+      <a href="#" class="btn-signup">Sign up</a>
+    </div>
+  </nav>
+
+</body>
+</html>
