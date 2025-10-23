@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hành trình học HTML/CSS</title>
+
+  <!-- Thư viện icon Boxicons -->
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* --- Thanh tiêu đề cố định --- */
+    header {
+      
+      width: 100%;
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      font-size: 1.3rem;
+    }
+
+    /* --- Nội dung chính --- */
+    main {
+      margin-top: 100px;
+      width: 80%;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      margin-bottom: 100px;
+      position: relative;
+    }
+
+    .year {
+      position: sticky;
+      top: 15%;
+      background: #90e0ef;
+      color: #023e8a;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    .content {
+        
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h3 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 1rem;
+    }
+
+    
+    .scroll-top {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #0077b6;
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 2rem;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .scroll-top:hover {
+      background: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Gán id để nút cuộn lên đầu hoạt động -->
+  <header id="top">Hành trình học HTML & CSS</header>
+
+  <main>
+    <section>
+      <div class="year">2023</div>
+      <div class="content">
+        <h3>Bắt đầu với lập trình</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At a, odio beatae ducimus perspiciatis est delectus reprehenderit aliquid dignissimos alias.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="year">2024</div>
+      <div class="content">
+        <h3>Lần đầu học HTML</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet totam expedita eum incidunt velit, non fugiat eos reiciendis dolorum. Dolorum.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="year">2025</div>
+      <div class="content">
+        <h3>Làm quen với CSS</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error modi tenetur excepturi vitae labore quam, alias facilis quod delectus repellendus!
+        </p>
+      </div>
+    </section>
+  </main>
+
+
+  <a href="#top" class="scroll-top">
+    <i class="bx bx-up-arrow-alt"></i>
+  </a>
+
+</body>
+</html>
